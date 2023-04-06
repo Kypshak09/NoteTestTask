@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25612F4029DF7262007C3E98 /* ModelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F3F29DF7262007C3E98 /* ModelNote.swift */; };
+		25612F4229DF74EA007C3E98 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F4129DF74EA007C3E98 /* TableCell.swift */; };
+		25612F4529DF7571007C3E98 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F4429DF7571007C3E98 /* UIColor.swift */; };
+		25612F4729DF7634007C3E98 /* TableNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F4629DF7634007C3E98 /* TableNotesView.swift */; };
 		25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98029DE977E004E4E9F /* AppDelegate.swift */; };
 		25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98229DE977E004E4E9F /* SceneDelegate.swift */; };
-		25F8F98529DE977E004E4E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98429DE977E004E4E9F /* ViewController.swift */; };
+		25F8F98529DE977E004E4E9F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98429DE977E004E4E9F /* NotesViewController.swift */; };
 		25F8F98A29DE9781004E4E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F8F98929DE9781004E4E9F /* Assets.xcassets */; };
 		25F8F98D29DE9781004E4E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F8F98B29DE9781004E4E9F /* LaunchScreen.storyboard */; };
 		25F8F99629DE99AF004E4E9F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 25F8F99529DE99AF004E4E9F /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25612F3F29DF7262007C3E98 /* ModelNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNote.swift; sourceTree = "<group>"; };
+		25612F4129DF74EA007C3E98 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		25612F4429DF7571007C3E98 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		25612F4629DF7634007C3E98 /* TableNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNotesView.swift; sourceTree = "<group>"; };
 		25F8F97D29DE977E004E4E9F /* NoteTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F8F98029DE977E004E4E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F8F98229DE977E004E4E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25F8F98429DE977E004E4E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25F8F98429DE977E004E4E9F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		25F8F98929DE9781004E4E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F8F98C29DE9781004E4E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25F8F98E29DE9781004E4E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25612F3C29DF723D007C3E98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25612F3F29DF7262007C3E98 /* ModelNote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25612F3D29DF7241007C3E98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25612F4129DF74EA007C3E98 /* TableCell.swift */,
+				25612F4629DF7634007C3E98 /* TableNotesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25612F3E29DF7249007C3E98 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25F8F98429DE977E004E4E9F /* NotesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25612F4329DF7526007C3E98 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				25612F4429DF7571007C3E98 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		25F8F97429DE977E004E4E9F = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +97,12 @@
 		25F8F97F29DE977E004E4E9F /* NoteTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				25612F4329DF7526007C3E98 /* Extension */,
+				25612F3C29DF723D007C3E98 /* Model */,
+				25612F3D29DF7241007C3E98 /* View */,
+				25612F3E29DF7249007C3E98 /* Controller */,
 				25F8F98029DE977E004E4E9F /* AppDelegate.swift */,
 				25F8F98229DE977E004E4E9F /* SceneDelegate.swift */,
-				25F8F98429DE977E004E4E9F /* ViewController.swift */,
 				25F8F98929DE9781004E4E9F /* Assets.xcassets */,
 				25F8F98B29DE9781004E4E9F /* LaunchScreen.storyboard */,
 				25F8F98E29DE9781004E4E9F /* Info.plist */,
@@ -142,7 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F8F98529DE977E004E4E9F /* ViewController.swift in Sources */,
+				25612F4729DF7634007C3E98 /* TableNotesView.swift in Sources */,
+				25612F4229DF74EA007C3E98 /* TableCell.swift in Sources */,
+				25612F4529DF7571007C3E98 /* UIColor.swift in Sources */,
+				25F8F98529DE977E004E4E9F /* NotesViewController.swift in Sources */,
+				25612F4029DF7262007C3E98 /* ModelNote.swift in Sources */,
 				25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */,
 				25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */,
 			);
