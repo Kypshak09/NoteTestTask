@@ -16,3 +16,7 @@ struct ModelNote {
     var editedDate: Date
     var pinned: Bool
 }
+
+struct Data {
+    let memberName = ["amir", "bamir", "camir", "damir", "tair", "kair", "ramir", "remair", "rama"]
+}
