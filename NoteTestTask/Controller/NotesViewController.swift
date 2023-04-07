@@ -45,8 +45,7 @@ extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
-        cell.labelTitle.text = data[indexPath.row]
-        cell.labelDescription.text = dataDescription[indexPath.row]
+        cell.configureData(indexPath: indexPath, dataTitle: data, dataDescription: dataDescription)
         return cell
     }
     

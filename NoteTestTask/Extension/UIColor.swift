@@ -9,7 +9,7 @@ import UIKit
 
 extension UIColor {
     static func myVioletColor() -> UIColor {
-        return UIColor(displayP3Red: 1.06, green: 0.62, blue: 1.61, alpha: 1.0)
+        return UIColor(displayP3Red: 0.69, green: 0.42, blue: 0.89, alpha: 1.0)
     }
     
     static func mySearchColor() -> UIColor {

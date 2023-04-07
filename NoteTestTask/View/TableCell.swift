@@ -28,6 +28,15 @@ class CollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    let labelLastEdited: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Arial", size: 9)
+        label.textColor = .black
+        label.text = "Last edited 12:23"
+        label.textAlignment = .right
+        return label
+    }()
+    
     let buttonDelete: UIButton = {
         let button = UIButton()
         let image = UIImage(systemName: "trash.fill")
@@ -58,6 +67,11 @@ class CollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configureData(indexPath: IndexPath, dataTitle: [String], dataDescription: [String]) {
+        labelDescription.text = dataDescription[indexPath.row]
+        labelTitle.text = dataTitle[indexPath.row]
     }
     
     private func configureConstraint() {
@@ -96,6 +110,13 @@ class CollectionViewCell: UICollectionViewCell {
             make.top.equalTo(labelDescription.snp_bottomMargin).offset(7)
             make.left.equalToSuperview().offset(15)
             make.width.height.equalTo(15)
+        }
+        view.addSubview(labelLastEdited)
+        labelLastEdited.snp.makeConstraints { make in
+            make.top.equalTo(labelDescription.snp_bottomMargin).offset(7)
+            make.left.equalTo(buttonPin.snp_rightMargin).offset(23)
+            
+            
         }
     }
 }

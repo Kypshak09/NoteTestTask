@@ -12,6 +12,17 @@ class TableNotesView: UIViewController {
     
     let identifier = "CollectionViewIdentifier"
     
+    let buttonNewNote: UIButton = {
+        let button = UIButton()
+        let image = UIImage(systemName: "plus.square.fill")?.withRenderingMode(.alwaysTemplate)
+        button.setImage(image, for: .normal)
+        button.contentVerticalAlignment = .fill
+        button.contentHorizontalAlignment = .fill
+        button.imageView?.contentMode = .scaleAspectFit
+        button.tintColor = UIColor.myVioletColor()
+        return button
+    }()
+    
     let searchField: UITextField = {
         let search = UITextField()
         search.placeholder = "Find your note"
@@ -60,7 +71,7 @@ class TableNotesView: UIViewController {
             make.top.equalToSuperview().offset(130)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().offset(-30)
-            make.height.equalTo(600)
+            make.height.equalTo(650)
         }
         
         view.addSubview(imageViewEmptyNote)
@@ -83,6 +94,12 @@ class TableNotesView: UIViewController {
             make.height.equalTo(30)
         }
         
+        view.addSubview(buttonNewNote)
+        buttonNewNote.snp.makeConstraints { make in
+            make.right.equalToSuperview().offset(-35)
+            make.top.equalToSuperview().offset(680)
+            make.width.height.equalTo(65)
+        }
     }
     
 }
