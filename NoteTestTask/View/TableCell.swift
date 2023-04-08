@@ -32,7 +32,6 @@ class CollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont(name: "Arial", size: 9)
         label.textColor = .black
-        label.text = "Last edited 12:23"
         label.textAlignment = .right
         return label
     }()

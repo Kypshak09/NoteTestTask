@@ -13,7 +13,7 @@ class NoteData: Object {
     @Persisted var titleNote: String = ""
     @Persisted var descriptionNote: String = ""
     @Persisted var pinnedNote: Bool = false
-    @Persisted var colorNote: String = ""
+    @Persisted var colorNote: String = "6A3EA1"
     @Persisted var tagNote: String = ""
     @Persisted var dateNote: Date?
 }

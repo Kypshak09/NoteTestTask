@@ -101,7 +101,6 @@ class TableNotesView: UIViewController {
             make.width.height.equalTo(65)
         }
     }
-    
 }
 
 
