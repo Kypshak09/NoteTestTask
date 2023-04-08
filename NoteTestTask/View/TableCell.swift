@@ -115,8 +115,6 @@ class CollectionViewCell: UICollectionViewCell {
         labelLastEdited.snp.makeConstraints { make in
             make.top.equalTo(labelDescription.snp_bottomMargin).offset(7)
             make.left.equalTo(buttonPin.snp_rightMargin).offset(23)
-            
-            
         }
     }
 }

@@ -6,21 +6,13 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 class NotesViewController: TableNotesView {
 
-    var data: [String] = ["Amir", "Tair", "Rama", "Baha", "Adil"] {
-        didSet {
-            collectionView.isHidden = data.isEmpty
-            imageViewEmptyNote.isHidden = !data.isEmpty
-            labelEmptyNote.isHidden = !data.isEmpty
-            
-            collectionView.reloadData()
-        }
-    }
+    let realm = try! Realm()
+    var data: Results<NoteData>!
     
-    var dataDescription = ["asmsmsm", "akljkaldlkd", "", "", ""]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +26,7 @@ class NotesViewController: TableNotesView {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: identifier)
+        data = realm.objects(NoteData.self)
     }
     
 }
@@ -45,7 +38,7 @@ extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
-        cell.configureData(indexPath: indexPath, dataTitle: data, dataDescription: dataDescription)
+        
         return cell
     }
     

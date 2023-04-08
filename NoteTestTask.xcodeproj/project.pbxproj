@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25612F4029DF7262007C3E98 /* ModelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F3F29DF7262007C3E98 /* ModelNote.swift */; };
+		25612F4029DF7262007C3E98 /* NoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F3F29DF7262007C3E98 /* NoteData.swift */; };
 		25612F4229DF74EA007C3E98 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F4129DF74EA007C3E98 /* TableCell.swift */; };
 		25612F4529DF7571007C3E98 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F4429DF7571007C3E98 /* UIColor.swift */; };
 		25612F4729DF7634007C3E98 /* TableNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25612F4629DF7634007C3E98 /* TableNotesView.swift */; };
+		256989C629E180FB00C441A3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 256989C529E180FB00C441A3 /* Realm */; };
+		256989C829E180FB00C441A3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 256989C729E180FB00C441A3 /* RealmSwift */; };
+		256989CB29E1812A00C441A3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CA29E1812A00C441A3 /* RealmManager.swift */; };
+		256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */; };
+		256989CF29E18B9200C441A3 /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CE29E18B9200C441A3 /* EditNoteView.swift */; };
+		256989D229E18D1E00C441A3 /* ButtonTappedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989D129E18D1E00C441A3 /* ButtonTappedProtocol.swift */; };
 		259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C32E229E0A003002B4AC7 /* UIFont.swift */; };
 		25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98029DE977E004E4E9F /* AppDelegate.swift */; };
 		25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98229DE977E004E4E9F /* SceneDelegate.swift */; };
@@ -21,10 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		25612F3F29DF7262007C3E98 /* ModelNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNote.swift; sourceTree = "<group>"; };
+		25612F3F29DF7262007C3E98 /* NoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteData.swift; sourceTree = "<group>"; };
 		25612F4129DF74EA007C3E98 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		25612F4429DF7571007C3E98 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		25612F4629DF7634007C3E98 /* TableNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNotesView.swift; sourceTree = "<group>"; };
+		256989CA29E1812A00C441A3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		256989CE29E18B9200C441A3 /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
+		256989D129E18D1E00C441A3 /* ButtonTappedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTappedProtocol.swift; sourceTree = "<group>"; };
 		259C32E229E0A003002B4AC7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		25F8F97D29DE977E004E4E9F /* NoteTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F8F98029DE977E004E4E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256989C829E180FB00C441A3 /* RealmSwift in Frameworks */,
+				256989C629E180FB00C441A3 /* Realm in Frameworks */,
 				25F8F99629DE99AF004E4E9F /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +62,7 @@
 		25612F3C29DF723D007C3E98 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				25612F3F29DF7262007C3E98 /* ModelNote.swift */,
+				25612F3F29DF7262007C3E98 /* NoteData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -60,6 +72,7 @@
 			children = (
 				25612F4129DF74EA007C3E98 /* TableCell.swift */,
 				25612F4629DF7634007C3E98 /* TableNotesView.swift */,
+				256989CE29E18B9200C441A3 /* EditNoteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -68,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				25F8F98429DE977E004E4E9F /* NotesViewController.swift */,
+				256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,6 +93,22 @@
 				259C32E229E0A003002B4AC7 /* UIFont.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		256989C929E1811400C441A3 /* Realm Manager */ = {
+			isa = PBXGroup;
+			children = (
+				256989CA29E1812A00C441A3 /* RealmManager.swift */,
+			);
+			path = "Realm Manager";
+			sourceTree = "<group>";
+		};
+		256989D029E18D0A00C441A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				256989D129E18D1E00C441A3 /* ButtonTappedProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		25F8F97429DE977E004E4E9F = {
@@ -100,6 +130,8 @@
 		25F8F97F29DE977E004E4E9F /* NoteTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				256989D029E18D0A00C441A3 /* Protocols */,
+				256989C929E1811400C441A3 /* Realm Manager */,
 				25612F4329DF7526007C3E98 /* Extension */,
 				25612F3C29DF723D007C3E98 /* Model */,
 				25612F3D29DF7241007C3E98 /* View */,
@@ -131,6 +163,8 @@
 			name = NoteTestTask;
 			packageProductDependencies = (
 				25F8F99529DE99AF004E4E9F /* SnapKit-Dynamic */,
+				256989C529E180FB00C441A3 /* Realm */,
+				256989C729E180FB00C441A3 /* RealmSwift */,
 			);
 			productName = NoteTestTask;
 			productReference = 25F8F97D29DE977E004E4E9F /* NoteTestTask.app */;
@@ -162,6 +196,7 @@
 			mainGroup = 25F8F97429DE977E004E4E9F;
 			packageReferences = (
 				25F8F99429DE99AF004E4E9F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				256989C429E180FB00C441A3 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 25F8F97E29DE977E004E4E9F /* Products */;
 			projectDirPath = "";
@@ -191,11 +226,15 @@
 			files = (
 				25612F4729DF7634007C3E98 /* TableNotesView.swift in Sources */,
 				25612F4229DF74EA007C3E98 /* TableCell.swift in Sources */,
+				256989CF29E18B9200C441A3 /* EditNoteView.swift in Sources */,
 				25612F4529DF7571007C3E98 /* UIColor.swift in Sources */,
 				25F8F98529DE977E004E4E9F /* NotesViewController.swift in Sources */,
 				259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */,
-				25612F4029DF7262007C3E98 /* ModelNote.swift in Sources */,
+				256989CB29E1812A00C441A3 /* RealmManager.swift in Sources */,
+				25612F4029DF7262007C3E98 /* NoteData.swift in Sources */,
 				25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */,
+				256989D229E18D1E00C441A3 /* ButtonTappedProtocol.swift in Sources */,
+				256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */,
 				25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +445,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		256989C429E180FB00C441A3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.1;
+			};
+		};
 		25F8F99429DE99AF004E4E9F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -417,6 +464,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		256989C529E180FB00C441A3 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 256989C429E180FB00C441A3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		256989C729E180FB00C441A3 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 256989C429E180FB00C441A3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		25F8F99529DE99AF004E4E9F /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 25F8F99429DE99AF004E4E9F /* XCRemoteSwiftPackageReference "SnapKit" */;
