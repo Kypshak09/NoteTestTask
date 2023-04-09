@@ -32,7 +32,7 @@ class HashtagCollectionViewCell: UICollectionViewCell {
             make.edges.equalToSuperview().inset(5)
             
         }
-        contentView.backgroundColor = .myVioletColor()
+        contentView.backgroundColor = .myCellHashtagColor()
         contentView.layer.cornerRadius = 10
     }
 }

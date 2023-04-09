@@ -130,8 +130,8 @@ class CollectionViewCell: UICollectionViewCell {
         }
         view.addSubview(labelLastEdited)
         labelLastEdited.snp.makeConstraints { make in
-            make.top.equalTo(labelDescription.snp_bottomMargin).offset(7)
-            make.left.equalTo(buttonPin.snp_rightMargin).offset(23)
+            make.top.equalTo(labelDescription.snp_bottomMargin).offset(10)
+            make.left.equalTo(buttonPin.snp_rightMargin).offset(30)
         }
     }
 }

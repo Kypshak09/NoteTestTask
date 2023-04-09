@@ -17,6 +17,8 @@
 		256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */; };
 		256989CF29E18B9200C441A3 /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CE29E18B9200C441A3 /* EditNoteView.swift */; };
 		256989D429E1E4AD00C441A3 /* HastagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989D329E1E4AD00C441A3 /* HastagCollectionViewCell.swift */; };
+		25835BDA29E3547600C40834 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25835BD929E3547600C40834 /* QuoteModel.swift */; };
+		25835BDC29E3549B00C40834 /* URL Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25835BDB29E3549B00C40834 /* URL Manager.swift */; };
 		259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C32E229E0A003002B4AC7 /* UIFont.swift */; };
 		25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98029DE977E004E4E9F /* AppDelegate.swift */; };
 		25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98229DE977E004E4E9F /* SceneDelegate.swift */; };
@@ -35,6 +37,8 @@
 		256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
 		256989CE29E18B9200C441A3 /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
 		256989D329E1E4AD00C441A3 /* HastagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastagCollectionViewCell.swift; sourceTree = "<group>"; };
+		25835BD929E3547600C40834 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		25835BDB29E3549B00C40834 /* URL Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL Manager.swift"; sourceTree = "<group>"; };
 		259C32E229E0A003002B4AC7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		25F8F97D29DE977E004E4E9F /* NoteTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F8F98029DE977E004E4E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				25612F3F29DF7262007C3E98 /* NoteData.swift */,
+				25835BD929E3547600C40834 /* QuoteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,11 +109,12 @@
 			path = "Realm Manager";
 			sourceTree = "<group>";
 		};
-		256989D029E18D0A00C441A3 /* Protocols */ = {
+		25835BD829E3546700C40834 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				25835BDB29E3549B00C40834 /* URL Manager.swift */,
 			);
-			path = Protocols;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		25F8F97429DE977E004E4E9F = {
@@ -130,7 +136,7 @@
 		25F8F97F29DE977E004E4E9F /* NoteTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				256989D029E18D0A00C441A3 /* Protocols */,
+				25835BD829E3546700C40834 /* Request */,
 				256989C929E1811400C441A3 /* Realm Manager */,
 				25612F4329DF7526007C3E98 /* Extension */,
 				25612F3C29DF723D007C3E98 /* Model */,
@@ -228,6 +234,7 @@
 				256989D429E1E4AD00C441A3 /* HastagCollectionViewCell.swift in Sources */,
 				25612F4229DF74EA007C3E98 /* TableCell.swift in Sources */,
 				256989CF29E18B9200C441A3 /* EditNoteView.swift in Sources */,
+				25835BDC29E3549B00C40834 /* URL Manager.swift in Sources */,
 				25612F4529DF7571007C3E98 /* UIColor.swift in Sources */,
 				25F8F98529DE977E004E4E9F /* NotesViewController.swift in Sources */,
 				259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */,
@@ -236,6 +243,7 @@
 				25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */,
 				256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */,
 				25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */,
+				25835BDA29E3547600C40834 /* QuoteModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

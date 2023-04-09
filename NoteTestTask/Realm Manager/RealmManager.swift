@@ -23,16 +23,14 @@ class RealmManager {
         print("Realm is located at:", localRealm.configuration.fileURL!)
     }
     
-    func updateData(data: NoteData, withTitle title: String?, description: String?, color: String?, tag: String?,isPinned: Bool?) {
+    func updateData(data: NoteData, withTitle title: String?, description: String?, color: String?, tag: String?, pinned: Bool? = nil) {
         try! localRealm.write {
             data.titleNote = title ?? data.titleNote
             data.descriptionNote = description ?? data.descriptionNote
             data.colorNote = color ?? data.colorNote
             data.tagNote = tag ?? data.tagNote
-            if let isPinned = isPinned {
-                        data.pinnedNote = isPinned
-                    }
-                    data.editedData = Date()
+            data.pinnedNote = pinned ?? data.pinnedNote
+            data.editedData = Date()
         }
     }
     

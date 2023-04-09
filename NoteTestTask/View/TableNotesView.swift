@@ -12,6 +12,43 @@ class TableNotesView: UIViewController {
     
     let identifier = "CollectionViewIdentifier"
     
+    let viewQuote: UIView = {
+        let view = UIView()
+        view.backgroundColor = .myVioletColor()
+        
+        return view
+    }()
+    
+    let quoteImage: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.image = UIImage(named: "quote")
+        return image
+    }()
+    
+    let labelTitleDailyQuote: UILabel = {
+        let label = UILabel()
+        label.text = "Daily quote"
+        label.font = UIFont(name: "Arial Bold", size: 20)
+        return label
+    }()
+    
+    let labelTextDailyQuote: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.preferredMaxLayoutWidth = 180
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    let labelAuthorDailyQuote: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.preferredMaxLayoutWidth = 180
+        label.numberOfLines = 0
+        return label
+    }()
+    
     let buttonNewNote: UIButton = {
         let button = UIButton()
         let image = UIImage(systemName: "plus.square.fill")?.withRenderingMode(.alwaysTemplate)
@@ -66,9 +103,55 @@ class TableNotesView: UIViewController {
     }
     private func configureConstraint() {
         
+        view.addSubview(viewQuote)
+        viewQuote.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.height.equalTo(160)
+            make.width.equalToSuperview()
+        }
+        
+        viewQuote.addSubview(quoteImage)
+        quoteImage.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(55)
+            make.trailing.equalToSuperview()
+            make.width.height.equalTo(100)
+        }
+        
+        viewQuote.addSubview(labelTitleDailyQuote)
+        labelTitleDailyQuote.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(50)
+            make.leading.equalToSuperview().offset(16)
+            make.width.equalTo(178)
+            make.height.equalTo(50)
+        }
+        
+        viewQuote.addSubview(labelTextDailyQuote)
+        labelTextDailyQuote.snp.makeConstraints { make in
+            make.top.equalTo(labelTitleDailyQuote.snp_bottomMargin).offset(5)
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().offset(-90)
+            make.height.equalTo(30)
+        }
+        
+        viewQuote.addSubview(labelAuthorDailyQuote)
+        labelAuthorDailyQuote.snp.makeConstraints { make in
+            make.top.equalTo(labelTextDailyQuote.snp_bottomMargin).offset(5)
+            make.leading.equalToSuperview().offset(150)
+            make.height.equalTo(30)
+        }
+        
+        view.addSubview(searchField)
+        searchField.snp.makeConstraints { make in
+            make.top.equalTo(viewQuote.snp_bottomMargin).offset(20)
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview().offset(-30)
+            make.height.equalTo(30)
+        }
+        
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(130)
+            make.top.equalTo(searchField.snp_bottomMargin).offset(24)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().offset(-30)
             make.height.equalTo(650)
@@ -85,15 +168,6 @@ class TableNotesView: UIViewController {
             make.top.equalTo(imageViewEmptyNote.snp_bottomMargin).offset(50)
             make.centerX.equalToSuperview()
         }
-        
-        view.addSubview(searchField)
-        searchField.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(100)
-            make.centerX.equalToSuperview()
-            make.width.equalToSuperview().offset(-30)
-            make.height.equalTo(30)
-        }
-        
         view.addSubview(buttonNewNote)
         buttonNewNote.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-35)

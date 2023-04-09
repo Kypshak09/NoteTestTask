@@ -81,14 +81,16 @@ class EditNoteView: UIViewController {
         view.addSubview(colorCollectionView)
         colorCollectionView.snp.makeConstraints { make in
             make.top.equalTo(noteTitleText.snp.bottom).offset(20)
-            make.leading.trailing.equalToSuperview()
+            make.leading.equalToSuperview().offset(15)
+            make.trailing.equalToSuperview()
             make.height.equalTo(60)
         }
         
         view.addSubview(hashtagCollectionView)
         hashtagCollectionView.snp.makeConstraints { make in
             make.top.equalTo(colorCollectionView.snp.bottom).offset(20)
-            make.leading.trailing.equalToSuperview()
+            make.leading.equalToSuperview().offset(15)
+            make.trailing.equalToSuperview()
             make.height.equalTo(40)
                 }
         

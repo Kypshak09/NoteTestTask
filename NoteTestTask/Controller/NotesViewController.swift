@@ -21,6 +21,7 @@ class NotesViewController: TableNotesView {
         super.viewDidLoad()
         configureCollection()
         configureButton()
+        configureQuote()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +30,19 @@ class NotesViewController: TableNotesView {
         updateVisiability()
     }
     
+    
+    func configureQuote() {
+        Request.shated.request { quote, error in
+            if let quote = quote?.first {
+                DispatchQueue.main.async {
+                    self.labelTextDailyQuote.text = quote.q
+                    self.labelAuthorDailyQuote.text = quote.a
+                }
+            } else if let error = error {
+                print("Error fetching quote:", error.localizedDescription)
+            }
+        }
+    }
     func sortedData() -> [NoteData] {
         guard let unsortedData = data else {
                return []
@@ -63,17 +77,12 @@ class NotesViewController: TableNotesView {
         updateVisiability()
     }
     
-    @objc func pinNote(sender: UIButton) {
+    @objc func togglePinNote(sender: UIButton) {
         guard let cell = sender.superview?.superview as? CollectionViewCell,
-                  let indexPath = collectionView.indexPath(for: cell) else { return }
-            pinnedNotes.insert(indexPath.item)
-            collectionView.reloadData()
-    }
-    
-    @objc func unpinNote(sender: UIButton) {
-        guard let cell = sender.superview?.superview as? CollectionViewCell,
-              let indexPath = collectionView.indexPath(for: cell) else { return }
-        pinnedNotes.remove(indexPath.item)
+              let indexPath = collectionView.indexPath(for: cell) else {return}
+        let note = sortedData()[indexPath.item]
+        let pinned = !note.pinnedNote
+        RealmManager.shared.updateData(data: note, withTitle: nil, description: nil, color: nil, tag: nil, pinned: pinned)
         collectionView.reloadData()
     }
     
@@ -107,24 +116,18 @@ extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
         let note = sortedData()[indexPath.item]
-        cell.buttonPin.addTarget(self, action: #selector(pinNote), for: .touchUpInside)
+        cell.buttonPin.addTarget(self, action: #selector(togglePinNote), for: .touchUpInside)
+        cell.buttonPin.setImage(UIImage(systemName: note.pinnedNote ? "pin.fill": "pin"), for: .normal)
         cell.buttonDelete.addTarget(self, action: #selector(deleteNote), for: .touchUpInside)
         cell.labelTitle.text = note.titleNote
         cell.view.backgroundColor = UIColor().color(note.colorNote)
         cell.labelHashtag.text = note.tagNote
         cell.labelDescription.text = note.descriptionNote
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM-dd HH:mm"
+        dateFormatter.dateFormat = "MM.dd HH:mm"
         let dateString = dateFormatter.string(from: note.editedData!)
         
         cell.labelLastEdited.text = dateString
-        if pinnedNotes.contains(indexPath.item) {
-                cell.buttonPin.setImage(UIImage(systemName: "pin.square"), for: .normal)
-                cell.buttonPin.addTarget(self, action: #selector(unpinNote), for: .touchUpInside)
-            } else {
-                cell.buttonPin.setImage(UIImage(systemName: "pin.square.fill"), for: .normal)
-                cell.buttonPin.addTarget(self, action: #selector(pinNote), for: .touchUpInside)
-            }
         return cell
     }
     

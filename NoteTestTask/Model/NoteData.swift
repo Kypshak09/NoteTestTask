@@ -15,6 +15,5 @@ class NoteData: Object {
     @Persisted var pinnedNote: Bool = false
     @Persisted var colorNote: String = "6A3EA1"
     @Persisted var tagNote: String = ""
-    @Persisted var createdData: Date?
     @Persisted var editedData: Date?
 }

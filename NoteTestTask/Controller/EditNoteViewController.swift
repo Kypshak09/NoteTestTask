@@ -50,7 +50,7 @@ class EditNoteViewController: EditNoteView {
         
 
         if editNote {
-            RealmManager.shared.updateData(data: noteData, withTitle: title, description: description, color: color, tag: tag, isPinned: false)
+            RealmManager.shared.updateData(data: noteData, withTitle: title, description: description, color: color, tag: tag)
         } else {
             let newNoteData = NoteData()
             newNoteData.titleNote = title

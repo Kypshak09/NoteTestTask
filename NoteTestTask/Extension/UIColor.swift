@@ -32,6 +32,10 @@ extension UIColor {
         return UIColor().color("EFEEF0")
     }
     
+    static func myCellHashtagColor() -> UIColor {
+        return UIColor().color("009FBD")
+    }
+    
     static func myHashtagColor() -> UIColor {
         return UIColor().color("EFE9F7")
     }
