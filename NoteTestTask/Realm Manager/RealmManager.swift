@@ -22,6 +22,16 @@ class RealmManager {
         print("Realm is located at:", localRealm.configuration.fileURL!)
     }
     
+    func updateData(data: NoteData, withTitle title: String?, description: String?, color: String?, tag: String?) {
+        try! localRealm.write {
+            data.titleNote = title ?? data.titleNote
+            data.descriptionNote = description ?? data.descriptionNote
+            data.colorNote = color ?? data.colorNote
+            data.tagNote = tag ?? data.tagNote
+        }
+    }
+    
+    
     func deleteData(data: NoteData) {
         try! localRealm.write {
             localRealm.delete(data)

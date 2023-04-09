@@ -20,6 +20,16 @@ class CollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    let labelHashtag: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Arial", size: 14)
+        label.backgroundColor = .myHashtagColor()
+        label.layer.cornerRadius = 10
+        label.textAlignment = .center
+        label.clipsToBounds = true
+        return label
+    }()
+    
     let labelDescription: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Arial", size: 12)
@@ -55,7 +65,7 @@ class CollectionViewCell: UICollectionViewCell {
     let view: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 15
-        view.backgroundColor = UIColor.myVioletColor()
+        view.backgroundColor = UIColor().color("6A3EA1")
         return view
     }()
     
@@ -79,6 +89,14 @@ class CollectionViewCell: UICollectionViewCell {
             make.centerX.centerY.equalToSuperview()
             make.height.equalTo(200)
             make.width.equalTo(156)
+        }
+        
+        self.addSubview(labelHashtag)
+        labelHashtag.snp.makeConstraints { make in
+            make.top.equalTo(view.snp_bottomMargin).offset(7)
+            make.width.equalTo(156)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(20)
         }
         
         view.addSubview(labelTitle)

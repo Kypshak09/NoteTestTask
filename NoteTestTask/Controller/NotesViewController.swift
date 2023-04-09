@@ -85,8 +85,16 @@ extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.buttonPin.addTarget(self, action: #selector(pinNote), for: .touchUpInside)
         cell.buttonDelete.addTarget(self, action: #selector(deleteNote), for: .touchUpInside)
         cell.labelTitle.text = note.titleNote
+        cell.view.backgroundColor = UIColor().color(note.colorNote)
+        cell.labelHashtag.text = note.tagNote
         cell.labelDescription.text = note.descriptionNote
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let editNoteVC = EditNoteViewController()
+        editNoteVC.noteData = data[indexPath.item]
+        navigationController?.pushViewController(editNoteVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
