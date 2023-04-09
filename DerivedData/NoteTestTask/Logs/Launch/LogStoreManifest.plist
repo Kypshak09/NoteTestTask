@@ -96,6 +96,51 @@
 			<key>uniqueIdentifier</key>
 			<string>0485AB93-730E-41F0-994A-6BD730BDE0FB</string>
 		</dict>
+		<key>06400C64-99AE-47F7-8B65-8B9B1B6E7BFB</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D9E96286-4E9C-4BFA-AB1B-41B1AB1CF61F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-44-52-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702769492.61839104</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>06400C64-99AE-47F7-8B65-8B9B1B6E7BFB</string>
+		</dict>
 		<key>0BA0BD72-6E4E-460D-8F40-609C810601D6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -546,6 +591,51 @@
 			<key>uniqueIdentifier</key>
 			<string>2CCE67F8-B308-44E6-99B3-86FF1A8313B3</string>
 		</dict>
+		<key>2D5EF067-AEE0-4380-8A72-48B4448236B5</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>F6ADA96F-4E27-46C4-8CB1-8648665D3F08</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-15-05-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702767705.02520096</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>2D5EF067-AEE0-4380-8A72-48B4448236B5</string>
+		</dict>
 		<key>2F877C2D-A23D-4856-924F-9DB650254C9B</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -591,6 +681,51 @@
 			<key>uniqueIdentifier</key>
 			<string>2F877C2D-A23D-4856-924F-9DB650254C9B</string>
 		</dict>
+		<key>4536BE9B-5C11-462A-962D-891CA6CBA067</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>B05EDEC3-7B78-4983-A8F8-37950DD655F8</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-31-29-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768689.62788701</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>4536BE9B-5C11-462A-962D-891CA6CBA067</string>
+		</dict>
 		<key>495BE697-C901-4B8B-9F49-5DCB7065FF96</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -635,6 +770,96 @@
 			<string>Run NoteTestTask</string>
 			<key>uniqueIdentifier</key>
 			<string>495BE697-C901-4B8B-9F49-5DCB7065FF96</string>
+		</dict>
+		<key>509088E7-C4BA-4017-96FF-5BE56258D6B2</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>8C5F9BB9-803A-4DD3-9DFE-728A46939159</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-27-19-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768439.34572101</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>509088E7-C4BA-4017-96FF-5BE56258D6B2</string>
+		</dict>
+		<key>52336F64-4F01-4C9E-BA38-C4231FE6827D</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>C4027DB0-6CF1-4BAB-9D45-ACC94345B7F8</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-30-19-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768619.32397401</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>52336F64-4F01-4C9E-BA38-C4231FE6827D</string>
 		</dict>
 		<key>565D47F1-8B12-4A55-85B4-8C08B1843075</key>
 		<dict>
@@ -861,6 +1086,141 @@
 			<key>uniqueIdentifier</key>
 			<string>6B471357-7F0E-49C3-8322-99D97E866FF7</string>
 		</dict>
+		<key>6FBF17B9-FFAA-46DC-BA3B-FCC130706D9F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>8437288E-D4D4-4842-8F8B-68C6E7D22264</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-36-36-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768996.36722302</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>6FBF17B9-FFAA-46DC-BA3B-FCC130706D9F</string>
+		</dict>
+		<key>714304F8-6B8B-4EF8-BAB6-BA8C936106C2</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>E1D6FA7C-C3A6-4978-B244-819B3CF535EB</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-30-36-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768636.90139794</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>714304F8-6B8B-4EF8-BAB6-BA8C936106C2</string>
+		</dict>
+		<key>74685674-EEAA-46C6-A9C7-8E0C3DACDC9A</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>AF446E41-2884-4AAF-B6B1-02DB95020945</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-29-22-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768562.28704298</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>74685674-EEAA-46C6-A9C7-8E0C3DACDC9A</string>
+		</dict>
 		<key>765A0C07-C6C7-4319-8B16-E138BF95A9C3</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -951,6 +1311,51 @@
 			<key>uniqueIdentifier</key>
 			<string>774E4A10-96F1-4B82-B366-513BC7D4E486</string>
 		</dict>
+		<key>7A0F7068-CE58-45C4-A642-9795CFB5D9F3</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>70338A2D-060B-4641-B1FE-BA00EBA799DA</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-34-53-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768893.82342696</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>7A0F7068-CE58-45C4-A642-9795CFB5D9F3</string>
+		</dict>
 		<key>7AF5A175-7C70-4EB2-9AB5-1F3D2BA94104</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1040,6 +1445,51 @@
 			<string>Run NoteTestTask</string>
 			<key>uniqueIdentifier</key>
 			<string>84E21786-F886-4329-8B71-E91260D7D743</string>
+		</dict>
+		<key>853333FF-87AC-46E0-8931-EE8F41F13E53</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>232BBBB0-412F-41A5-BF7E-C781B0DA892F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-29-49-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768589.61733603</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>853333FF-87AC-46E0-8931-EE8F41F13E53</string>
 		</dict>
 		<key>86266262-5466-4149-A5B6-1BDC49D8075C</key>
 		<dict>
@@ -1266,6 +1716,51 @@
 			<key>uniqueIdentifier</key>
 			<string>996796FE-D947-4355-9623-4B0353240935</string>
 		</dict>
+		<key>9D0E674B-6D32-4C37-813D-FD75215EF074</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>DAF585E7-7E20-4A25-821C-07284BF76A9B</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-36-12-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768972.90044296</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>9D0E674B-6D32-4C37-813D-FD75215EF074</string>
+		</dict>
 		<key>9EE7384D-A42B-40A9-BBDD-35D93789C1FF</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1401,6 +1896,51 @@
 			<key>uniqueIdentifier</key>
 			<string>A423D71E-5149-4B3E-922E-EA7820B8EEAE</string>
 		</dict>
+		<key>A9E59ED3-BD7E-4EDD-BD07-F894936C7816</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>9FDF71D8-F471-4C52-9F53-4B00558BC43A</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-30-54-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768654.19941199</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>A9E59ED3-BD7E-4EDD-BD07-F894936C7816</string>
+		</dict>
 		<key>AC040377-3B80-4018-B9CB-7AADD31A4AA6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1445,6 +1985,96 @@
 			<string>Run NoteTestTask</string>
 			<key>uniqueIdentifier</key>
 			<string>AC040377-3B80-4018-B9CB-7AADD31A4AA6</string>
+		</dict>
+		<key>BB795DC3-0908-4BA2-B0AC-F61D682A98E6</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>60522BEA-43C6-4711-BC7C-3DB0E456F1EB</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-31-53-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768713.84240496</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>BB795DC3-0908-4BA2-B0AC-F61D682A98E6</string>
+		</dict>
+		<key>BB99EF94-F617-447F-80D8-BE27FF069349</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>1E447FEF-1CD6-4D88-9F16-D6FB0ED7068F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-24-50-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768290.00501096</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>BB99EF94-F617-447F-80D8-BE27FF069349</string>
 		</dict>
 		<key>BE6BF657-9791-4E54-8D5C-9F997C1E0829</key>
 		<dict>
@@ -1536,6 +2166,51 @@
 			<key>uniqueIdentifier</key>
 			<string>C23D1837-F20C-4D8C-9C1D-396F4FEFB720</string>
 		</dict>
+		<key>C6550971-37F1-4FE5-B857-F53F37B7F597</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>F6511D77-3048-4BD2-8DA9-9476FD5CCECD</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-46-16-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702769576.67170095</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>C6550971-37F1-4FE5-B857-F53F37B7F597</string>
+		</dict>
 		<key>C88392AC-97DD-43BF-9CB3-F1D2035FCA48</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1626,6 +2301,51 @@
 			<key>uniqueIdentifier</key>
 			<string>D01E4175-FF80-4925-9759-8F6CDC6F42C7</string>
 		</dict>
+		<key>D31B19C2-1332-47E9-B515-12E686E09F2A</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>907CD91C-695E-4F7F-AF22-7ADDE3905081</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-33-55-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702768835.35959196</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>D31B19C2-1332-47E9-B515-12E686E09F2A</string>
+		</dict>
 		<key>D66DAD73-C324-4DFD-9CA8-212CC2C92C6E</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1670,6 +2390,51 @@
 			<string>Run NoteTestTask</string>
 			<key>uniqueIdentifier</key>
 			<string>D66DAD73-C324-4DFD-9CA8-212CC2C92C6E</string>
+		</dict>
+		<key>D9F96E6A-FB39-4E42-99D5-5CBA9820A377</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>C67D649F-E3E2-4D79-8251-393C968B5D3B</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-17-31-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702767851.03998804</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>D9F96E6A-FB39-4E42-99D5-5CBA9820A377</string>
 		</dict>
 		<key>DAFD99FE-CC2A-4FFD-B5C3-949E2BBBED3C</key>
 		<dict>
@@ -1850,6 +2615,51 @@
 			<string>Run NoteTestTask</string>
 			<key>uniqueIdentifier</key>
 			<string>E5FE2532-DA39-4D1A-A45B-79B45F2A7DC2</string>
+		</dict>
+		<key>E6927478-1D6F-46A9-8260-25F60E59896F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D15A056D-693C-42F4-B303-F0730B1477F9</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NoteTestTask-2023.04.10_03-13-21-+0600.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NoteTestTask project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NoteTestTask</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NoteTestTask</string>
+			<key>timeStartedRecording</key>
+			<real>702767601.65231502</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NoteTestTask</string>
+			<key>uniqueIdentifier</key>
+			<string>E6927478-1D6F-46A9-8260-25F60E59896F</string>
 		</dict>
 		<key>E9300F34-7293-4BC3-AA3A-48AF653B2676</key>
 		<dict>

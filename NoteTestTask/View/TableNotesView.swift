@@ -60,14 +60,15 @@ class TableNotesView: UIViewController {
         return button
     }()
     
-    let searchField: UITextField = {
-        let search = UITextField()
+    let searchField: UISearchBar = {
+        let search = UISearchBar()
         search.placeholder = "Find your note"
-        search.backgroundColor = UIColor.mySearchColor()
-        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        search.leftView = leftView
-        search.leftViewMode = .always
+        search.layer.borderWidth = 1;
+        search.layer.borderColor = UIColor.black.cgColor
+        search.searchTextField.backgroundColor = .clear
         search.layer.cornerRadius = 15
+        search.tintColor = .black
+        search.sizeToFit()
         return search
     }()
     

@@ -36,7 +36,7 @@ class NotesViewController: TableNotesView {
             if let quote = quote?.first {
                 DispatchQueue.main.async {
                     self.labelTextDailyQuote.text = quote.q
-                    self.labelAuthorDailyQuote.text = quote.a
+                    self.labelAuthorDailyQuote.text = "- \(quote.a)"
                 }
             } else if let error = error {
                 print("Error fetching quote:", error.localizedDescription)
