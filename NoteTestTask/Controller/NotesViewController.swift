@@ -15,6 +15,7 @@ class NotesViewController: TableNotesView {
     let realm = try! Realm()
     var data: Results<NoteData>!
     let noteData = NoteData()
+    var pinnedNotes: Set<Int> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,21 @@ class NotesViewController: TableNotesView {
         updateVisiability()
     }
     
-    
+    func sortedData() -> [NoteData] {
+        guard let unsortedData = data else {
+               return []
+           }
+
+        let unsortedArray = Array(unsortedData)
+        let sortedData = unsortedArray.sorted { (first: NoteData, second: NoteData) -> Bool in
+                if first.pinnedNote != second.pinnedNote {
+                    return first.pinnedNote && !second.pinnedNote
+                } else {
+                    return first.editedData! > second.editedData!
+                }
+            }
+        return sortedData
+    }
     
     private func configureButton() {
         buttonNewNote.addTarget(self, action: #selector(goToTest), for: .touchUpInside)
@@ -48,8 +63,18 @@ class NotesViewController: TableNotesView {
         updateVisiability()
     }
     
-    @objc func pinNote() {
-        
+    @objc func pinNote(sender: UIButton) {
+        guard let cell = sender.superview?.superview as? CollectionViewCell,
+                  let indexPath = collectionView.indexPath(for: cell) else { return }
+            pinnedNotes.insert(indexPath.item)
+            collectionView.reloadData()
+    }
+    
+    @objc func unpinNote(sender: UIButton) {
+        guard let cell = sender.superview?.superview as? CollectionViewCell,
+              let indexPath = collectionView.indexPath(for: cell) else { return }
+        pinnedNotes.remove(indexPath.item)
+        collectionView.reloadData()
     }
     
     private func configureCollection() {
@@ -76,24 +101,36 @@ class NotesViewController: TableNotesView {
 
 extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
+        return sortedData().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
-        let note = data[indexPath.item]
+        let note = sortedData()[indexPath.item]
         cell.buttonPin.addTarget(self, action: #selector(pinNote), for: .touchUpInside)
         cell.buttonDelete.addTarget(self, action: #selector(deleteNote), for: .touchUpInside)
         cell.labelTitle.text = note.titleNote
         cell.view.backgroundColor = UIColor().color(note.colorNote)
         cell.labelHashtag.text = note.tagNote
         cell.labelDescription.text = note.descriptionNote
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd HH:mm"
+        let dateString = dateFormatter.string(from: note.editedData!)
+        
+        cell.labelLastEdited.text = dateString
+        if pinnedNotes.contains(indexPath.item) {
+                cell.buttonPin.setImage(UIImage(systemName: "pin.square"), for: .normal)
+                cell.buttonPin.addTarget(self, action: #selector(unpinNote), for: .touchUpInside)
+            } else {
+                cell.buttonPin.setImage(UIImage(systemName: "pin.square.fill"), for: .normal)
+                cell.buttonPin.addTarget(self, action: #selector(pinNote), for: .touchUpInside)
+            }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let editNoteVC = EditNoteViewController()
-        editNoteVC.noteData = data[indexPath.item]
+        editNoteVC.noteData = sortedData()[indexPath.item]
         navigationController?.pushViewController(editNoteVC, animated: true)
     }
     

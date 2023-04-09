@@ -16,7 +16,6 @@
 		256989CB29E1812A00C441A3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CA29E1812A00C441A3 /* RealmManager.swift */; };
 		256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */; };
 		256989CF29E18B9200C441A3 /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989CE29E18B9200C441A3 /* EditNoteView.swift */; };
-		256989D229E18D1E00C441A3 /* ButtonTappedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989D129E18D1E00C441A3 /* ButtonTappedProtocol.swift */; };
 		256989D429E1E4AD00C441A3 /* HastagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256989D329E1E4AD00C441A3 /* HastagCollectionViewCell.swift */; };
 		259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C32E229E0A003002B4AC7 /* UIFont.swift */; };
 		25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98029DE977E004E4E9F /* AppDelegate.swift */; };
@@ -35,7 +34,6 @@
 		256989CA29E1812A00C441A3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		256989CC29E18A0A00C441A3 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
 		256989CE29E18B9200C441A3 /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
-		256989D129E18D1E00C441A3 /* ButtonTappedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTappedProtocol.swift; sourceTree = "<group>"; };
 		256989D329E1E4AD00C441A3 /* HastagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastagCollectionViewCell.swift; sourceTree = "<group>"; };
 		259C32E229E0A003002B4AC7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		25F8F97D29DE977E004E4E9F /* NoteTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +107,6 @@
 		256989D029E18D0A00C441A3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				256989D129E18D1E00C441A3 /* ButtonTappedProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 				256989CB29E1812A00C441A3 /* RealmManager.swift in Sources */,
 				25612F4029DF7262007C3E98 /* NoteData.swift in Sources */,
 				25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */,
-				256989D229E18D1E00C441A3 /* ButtonTappedProtocol.swift in Sources */,
 				256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */,
 				25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */,
 			);

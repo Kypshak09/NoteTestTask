@@ -47,15 +47,17 @@ class EditNoteViewController: EditNoteView {
         let description = noteDescriptionText.text ?? ""
         let color = selectedColor ?? "6A3EA1"
         let tag = hashTag ?? hashtags[0]
+        
 
         if editNote {
-            RealmManager.shared.updateData(data: noteData, withTitle: title, description: description, color: color, tag: tag)
+            RealmManager.shared.updateData(data: noteData, withTitle: title, description: description, color: color, tag: tag, isPinned: false)
         } else {
             let newNoteData = NoteData()
             newNoteData.titleNote = title
             newNoteData.descriptionNote = description
             newNoteData.colorNote = color
             newNoteData.tagNote = tag
+            newNoteData.editedData = Date()
             RealmManager.shared.saveData(data: newNoteData)
         }
         navigationController?.popViewController(animated: true)
