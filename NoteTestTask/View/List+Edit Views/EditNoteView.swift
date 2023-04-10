@@ -10,36 +10,15 @@ import SnapKit
 
 class EditNoteView: UIViewController {
 
-    let colors: [UIColor] = [.myOrangeColor(), .myGreenColor(), .myBlueColor(), .myVioletColor(),.myCyanColor(),.myYellowColor(), .myRedColor(), .mySomeColor()]
+    let colorCodes = ["FF6000", "C7E9B0", "009FBD", "6A3EA1", "27E1C1", "FFD93D", "FC2947", "FFBF9B"]
+    var colors: [UIColor] { return colorCodes.map { UIColor().color($0) } }
     let hashtags: [String] = ["#personal", "#work", "#study", "#travel", "#hobby"]
     let identfierColor = "ColorCell"
     let identifierHashtag = "HastagCell"
     
-    lazy var colorCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 45, height: 45)
-        layout.minimumInteritemSpacing = 5
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .clear
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: identfierColor)
-        return collectionView
-       }()
+    let colorCollectionView = UICollectionView.createCollectionView(itemSize: CGSize(width: 45, height: 45), scrollDirection: .horizontal, minimumInteritemSpacing: 5, minimumLineSpacing: 10, sectionInset: UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5), showsHorizontalScrollIndicator: false, backgroundColor: .clear)
     
-    lazy var hashtagCollectionView: UICollectionView = {
-           let layout = UICollectionViewFlowLayout()
-           layout.scrollDirection = .horizontal
-           layout.itemSize = CGSize(width: 60, height: 32)
-           layout.minimumInteritemSpacing = 5
-           layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-           let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-           collectionView.showsHorizontalScrollIndicator = false
-           collectionView.backgroundColor = .clear
-           collectionView.register(HashtagCollectionViewCell.self, forCellWithReuseIdentifier: identifierHashtag)
-           return collectionView
-       }()
+    let hashtagCollectionView = UICollectionView.createCollectionView(itemSize: CGSize(width: 60, height: 32), scrollDirection: .horizontal, minimumInteritemSpacing: 5, minimumLineSpacing: 10,sectionInset: UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5), showsHorizontalScrollIndicator: false, backgroundColor: .clear)
     
     let noteTitleText: UITextField = {
         let text = UITextField()

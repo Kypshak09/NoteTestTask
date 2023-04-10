@@ -14,6 +14,8 @@ class RealmManager {
     static let shared = RealmManager()
     private init () {}
     
+    
+    
     let localRealm = try! Realm()
     
     func saveData(data: NoteData) {
@@ -33,7 +35,6 @@ class RealmManager {
             data.editedData = Date()
         }
     }
-    
     
     func deleteData(data: NoteData) {
         try! localRealm.write {

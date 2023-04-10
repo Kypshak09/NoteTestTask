@@ -20,6 +20,11 @@
 		25835BDA29E3547600C40834 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25835BD929E3547600C40834 /* QuoteModel.swift */; };
 		25835BDC29E3549B00C40834 /* URL Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25835BDB29E3549B00C40834 /* URL Manager.swift */; };
 		259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C32E229E0A003002B4AC7 /* UIFont.swift */; };
+		25F6610829E47ACA00A61932 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F6610729E47ACA00A61932 /* UILabel.swift */; };
+		25F6610A29E47D9A00A61932 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F6610929E47D9A00A61932 /* UIImage.swift */; };
+		25F6610C29E48E7300A61932 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F6610B29E48E7300A61932 /* UIButton.swift */; };
+		25F6610E29E491E700A61932 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F6610D29E491E700A61932 /* UIView.swift */; };
+		25F6611029E494FC00A61932 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F6610F29E494FC00A61932 /* UICollectionView.swift */; };
 		25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98029DE977E004E4E9F /* AppDelegate.swift */; };
 		25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98229DE977E004E4E9F /* SceneDelegate.swift */; };
 		25F8F98529DE977E004E4E9F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8F98429DE977E004E4E9F /* NotesViewController.swift */; };
@@ -40,6 +45,11 @@
 		25835BD929E3547600C40834 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 		25835BDB29E3549B00C40834 /* URL Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL Manager.swift"; sourceTree = "<group>"; };
 		259C32E229E0A003002B4AC7 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		25F6610729E47ACA00A61932 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		25F6610929E47D9A00A61932 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		25F6610B29E48E7300A61932 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		25F6610D29E491E700A61932 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		25F6610F29E494FC00A61932 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		25F8F97D29DE977E004E4E9F /* NoteTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F8F98029DE977E004E4E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F8F98229DE977E004E4E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,10 +85,8 @@
 		25612F3D29DF7241007C3E98 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				25612F4129DF74EA007C3E98 /* TableCell.swift */,
-				256989D329E1E4AD00C441A3 /* HastagCollectionViewCell.swift */,
-				25612F4629DF7634007C3E98 /* TableNotesView.swift */,
-				256989CE29E18B9200C441A3 /* EditNoteView.swift */,
+				25F6611129E49A5E00A61932 /* Cell */,
+				25F6611229E49A6B00A61932 /* List+Edit Views */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +105,11 @@
 			children = (
 				25612F4429DF7571007C3E98 /* UIColor.swift */,
 				259C32E229E0A003002B4AC7 /* UIFont.swift */,
+				25F6610729E47ACA00A61932 /* UILabel.swift */,
+				25F6610929E47D9A00A61932 /* UIImage.swift */,
+				25F6610B29E48E7300A61932 /* UIButton.swift */,
+				25F6610D29E491E700A61932 /* UIView.swift */,
+				25F6610F29E494FC00A61932 /* UICollectionView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -115,6 +128,24 @@
 				25835BDB29E3549B00C40834 /* URL Manager.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		25F6611129E49A5E00A61932 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				25612F4129DF74EA007C3E98 /* TableCell.swift */,
+				256989D329E1E4AD00C441A3 /* HastagCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		25F6611229E49A6B00A61932 /* List+Edit Views */ = {
+			isa = PBXGroup;
+			children = (
+				25612F4629DF7634007C3E98 /* TableNotesView.swift */,
+				256989CE29E18B9200C441A3 /* EditNoteView.swift */,
+			);
+			path = "List+Edit Views";
 			sourceTree = "<group>";
 		};
 		25F8F97429DE977E004E4E9F = {
@@ -230,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F6610C29E48E7300A61932 /* UIButton.swift in Sources */,
 				25612F4729DF7634007C3E98 /* TableNotesView.swift in Sources */,
 				256989D429E1E4AD00C441A3 /* HastagCollectionViewCell.swift in Sources */,
 				25612F4229DF74EA007C3E98 /* TableCell.swift in Sources */,
@@ -239,11 +271,15 @@
 				25F8F98529DE977E004E4E9F /* NotesViewController.swift in Sources */,
 				259C32E329E0A003002B4AC7 /* UIFont.swift in Sources */,
 				256989CB29E1812A00C441A3 /* RealmManager.swift in Sources */,
+				25F6610A29E47D9A00A61932 /* UIImage.swift in Sources */,
 				25612F4029DF7262007C3E98 /* NoteData.swift in Sources */,
+				25F6610829E47ACA00A61932 /* UILabel.swift in Sources */,
 				25F8F98129DE977E004E4E9F /* AppDelegate.swift in Sources */,
 				256989CD29E18A0A00C441A3 /* EditNoteViewController.swift in Sources */,
 				25F8F98329DE977E004E4E9F /* SceneDelegate.swift in Sources */,
+				25F6610E29E491E700A61932 /* UIView.swift in Sources */,
 				25835BDA29E3547600C40834 /* QuoteModel.swift in Sources */,
+				25F6611029E494FC00A61932 /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

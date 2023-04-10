@@ -12,53 +12,18 @@ class TableNotesView: UIViewController {
     
     let identifier = "CollectionViewIdentifier"
     
-    let viewQuote: UIView = {
-        let view = UIView()
-        view.backgroundColor = .myVioletColor()
-        
-        return view
-    }()
+    let viewQuote = UIView.createView(color: .myVioletColor())
     
-    let quoteImage: UIImageView = {
-        let image = UIImageView()
-        image.contentMode = .scaleAspectFit
-        image.image = UIImage(named: "quote")
-        return image
-    }()
+    let imageViewEmptyNote = UIImageView.createImage(name: "noNote")
+    let quoteImage = UIImageView.createImage(name: "quote")
     
-    let labelTitleDailyQuote: UILabel = {
-        let label = UILabel()
-        label.text = "Daily quote"
-        label.font = UIFont(name: "Arial Bold", size: 20)
-        return label
-    }()
+    let labelTextDailyQuote = UILabel.createLabel(name: "", fontSize: 12, font: nil, backgroundColor: .clear)
+    let labelTitleDailyQuote = UILabel.createLabel(name: "Daily Quote", fontSize: 20, font: "Arial Bold", backgroundColor: .clear)
+    let labelEmptyNote = UILabel.createLabel(name: "No notes yet", fontSize: 24, font: "Arial Bold", backgroundColor: .clear)
+    let labelAuthorDailyQuote = UILabel.createLabel(name: "", fontSize: 12, font: nil, backgroundColor: .clear)
+    let buttonNewNote = UIButton.createButtonCell(image: "plus.square.fill")
     
-    let labelTextDailyQuote: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.preferredMaxLayoutWidth = 180
-        label.numberOfLines = 0
-        return label
-    }()
-    
-    let labelAuthorDailyQuote: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.preferredMaxLayoutWidth = 180
-        label.numberOfLines = 0
-        return label
-    }()
-    
-    let buttonNewNote: UIButton = {
-        let button = UIButton()
-        let image = UIImage(systemName: "plus.square.fill")?.withRenderingMode(.alwaysTemplate)
-        button.setImage(image, for: .normal)
-        button.contentVerticalAlignment = .fill
-        button.contentHorizontalAlignment = .fill
-        button.imageView?.contentMode = .scaleAspectFit
-        button.tintColor = UIColor.myVioletColor()
-        return button
-    }()
+    let collectionView = UICollectionView.createCollectionView(itemSize: CGSize(width: 156, height: 200), minimumInteritemSpacing: 4, minimumLineSpacing: 16, backgroundColor: .white)
     
     let searchField: UISearchBar = {
         let search = UISearchBar()
@@ -71,31 +36,6 @@ class TableNotesView: UIViewController {
         search.sizeToFit()
         return search
     }()
-    
-    let labelEmptyNote: UILabel = {
-        let label = UILabel()
-        label.text = "No notes yet"
-        label.font = UIFont(name: "Arial Bold", size: 24)
-        return label
-    }()
-    
-    let imageViewEmptyNote: UIImageView = {
-        let image = UIImageView()
-        image.contentMode = .scaleAspectFit
-        image.image = UIImage(named: "noNote")
-        return image
-    }()
-    
-    let collectionView: UICollectionView = {
-            let layout = UICollectionViewFlowLayout()
-            layout.itemSize = CGSize(width: 156, height: 200)
-            layout.minimumInteritemSpacing = 4
-            layout.minimumLineSpacing = 16
-            let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
-            collection.backgroundColor = .white
-            collection.translatesAutoresizingMaskIntoConstraints = false
-            return collection
-        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -170,6 +110,10 @@ class TableNotesView: UIViewController {
             make.centerX.equalToSuperview()
         }
         view.addSubview(buttonNewNote)
+        buttonNewNote.contentVerticalAlignment = .fill
+        buttonNewNote.contentHorizontalAlignment = .fill
+        buttonNewNote.imageView?.contentMode = .scaleAspectFit
+        buttonNewNote.tintColor = UIColor.myVioletColor()
         buttonNewNote.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-35)
             make.top.equalToSuperview().offset(680)

@@ -12,18 +12,27 @@ class EditNoteViewController: EditNoteView {
     
     var noteData: NoteData?
     var editNote: Bool = false
-    
     var selectedColor: String?
     var hashTag: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureCollections()
     }
     
-    
     private func configureCollections() {
+        registerCells()
+        setUpNotes()
+        setUpNavigationBar()
+        setDelegatesDataSource()
+    }
+    
+    private func registerCells() {
+        colorCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: identfierColor)
+        hashtagCollectionView.register(HashtagCollectionViewCell.self, forCellWithReuseIdentifier: identifierHashtag)
+    }
+    
+    private func setUpNotes() {
         if let noteData = noteData {
             editNote = true
             noteTitleText.text = noteData.titleNote
@@ -33,7 +42,13 @@ class EditNoteViewController: EditNoteView {
         } else {
             noteData = NoteData()
         }
+    }
+    
+    private func setUpNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveData))
+    }
+    
+    private func setDelegatesDataSource() {
         colorCollectionView.delegate = self
         hashtagCollectionView.delegate = self
         colorCollectionView.dataSource = self
@@ -64,13 +79,12 @@ class EditNoteViewController: EditNoteView {
     }
     
 }
-extension EditNoteViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+extension EditNoteViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == colorCollectionView {
-            return colors.count
-        } else {
-            return hashtags.count
-        }
+        return collectionView == colorCollectionView ? colors.count : hashtags.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -81,51 +95,38 @@ extension EditNoteViewController: UICollectionViewDelegate, UICollectionViewData
             cell.layer.cornerRadius = 10
             return cell
             
-        } else if collectionView == hashtagCollectionView {
+        } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifierHashtag, for: indexPath) as! HashtagCollectionViewCell
             cell.labelHashtag.text = hashtags[indexPath.item]
             return cell
-        } else {
-            return UICollectionViewCell()
         }
     }
     
+    private func cellConfigure(cell: UICollectionViewCell, isSelected: Bool) {
+        cell.alpha = isSelected ? 0.8 : 1
+        cell.layer.cornerRadius = 10
+        cell.layer.borderWidth = isSelected ? 3 : 0
+        cell.layer.borderColor = isSelected ? UIColor.black.cgColor : nil
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
         switch collectionView {
         case colorCollectionView:
-            switch indexPath.item {
-            case 0: selectedColor = "FF6000"
-            case 1: selectedColor = "C7E9B0"
-            case 2: selectedColor = "009FBD"
-            case 3: selectedColor = "6A3EA1"
-            case 4: selectedColor = "27E1C1"
-            case 5: selectedColor = "FFD93D"
-            case 6: selectedColor = "FC2947"
-            case 7: selectedColor = "FFBF9B"
-            default: selectedColor = "6A3EA1"
-            }
+            selectedColor = colorCodes[indexPath.item]
         case hashtagCollectionView:
             let selectedHashtag = hashtags[indexPath.item]
             hashTag = selectedHashtag
         default:
             hashTag = "personal"
         }
-        
         if let cell = collectionView.cellForItem(at: indexPath) {
-            cell.alpha = 0.8
-            cell.layer.cornerRadius = 10
-            cell.layer.borderWidth = 2
-            cell.layer.borderColor = UIColor.black.cgColor
+            cellConfigure(cell: cell, isSelected: true)
             }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if let cell = collectionView.cellForItem(at: indexPath) {
-            cell.alpha = 1
-            cell.layer.cornerRadius = 10
-            cell.layer.borderWidth = 0
+            cellConfigure(cell: cell, isSelected: false)
         }
     }
 }

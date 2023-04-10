@@ -9,13 +9,7 @@ import SnapKit
 
 class HashtagCollectionViewCell: UICollectionViewCell {
     
-    let labelHashtag: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 10)
-        label.textAlignment = .center
-        return label
-    }()
+    let labelHashtag = UILabel.createLabel(name: "", fontSize: 10, font: nil, backgroundColor: .clear)
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -28,6 +22,7 @@ class HashtagCollectionViewCell: UICollectionViewCell {
     
     private func configureConstraint() {
         contentView.addSubview(labelHashtag)
+        labelHashtag.textAlignment = .center
         labelHashtag.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(5)
             

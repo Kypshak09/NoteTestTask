@@ -12,10 +12,7 @@ import RealmSwift
 
 class NotesViewController: TableNotesView {
 
-    let realm = try! Realm()
     var data: Results<NoteData>!
-    let noteData = NoteData()
-    var pinnedNotes: Set<Int> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +22,13 @@ class NotesViewController: TableNotesView {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        data = realm.objects(NoteData.self)
+        data = RealmManager.shared.localRealm.objects(NoteData.self)
         collectionView.reloadData()
         updateVisiability()
     }
     
     
-    func configureQuote() {
+    private func configureQuote() {
         Request.shated.request { quote, error in
             if let quote = quote?.first {
                 DispatchQueue.main.async {
@@ -43,28 +40,24 @@ class NotesViewController: TableNotesView {
             }
         }
     }
-    func sortedData() -> [NoteData] {
-        guard let unsortedData = data else {
-               return []
-           }
+    private func sortedData() -> [NoteData] {
+        guard let unsortedData = data else { return [] }
 
         let unsortedArray = Array(unsortedData)
-        let sortedData = unsortedArray.sorted { (first: NoteData, second: NoteData) -> Bool in
-                if first.pinnedNote != second.pinnedNote {
-                    return first.pinnedNote && !second.pinnedNote
-                } else {
-                    return first.editedData! > second.editedData!
+        return unsortedArray.sorted { (first, second) in
+                    if first.pinnedNote != second.pinnedNote {
+                        return first.pinnedNote && !second.pinnedNote
+                    } else {
+                        return first.editedData! > second.editedData!
+                    }
                 }
-            }
-        return sortedData
     }
     
     private func configureButton() {
-        buttonNewNote.addTarget(self, action: #selector(goToTest), for: .touchUpInside)
-        
+        buttonNewNote.addTarget(self, action: #selector(goToEditNote), for: .touchUpInside)
     }
     
-    @objc func goToTest() {
+    @objc func goToEditNote() {
         navigationController?.pushViewController(EditNoteViewController(), animated: true)
     }
     
@@ -95,15 +88,10 @@ class NotesViewController: TableNotesView {
     }
     
     private func updateVisiability() {
-        if let data = data, !data.isEmpty {
-            collectionView.isHidden = false
-            imageViewEmptyNote.isHidden = true
-            labelEmptyNote.isHidden = true
-        } else {
-            collectionView.isHidden = true
-            imageViewEmptyNote.isHidden = false
-            labelEmptyNote.isHidden = false
-        }
+        let isEmpty = data?.isEmpty ?? true
+        collectionView.isHidden = isEmpty
+        imageViewEmptyNote.isHidden = !isEmpty
+        labelEmptyNote.isHidden = !isEmpty
     }
     
 }
@@ -117,17 +105,8 @@ extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSou
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
         let note = sortedData()[indexPath.item]
         cell.buttonPin.addTarget(self, action: #selector(togglePinNote), for: .touchUpInside)
-        cell.buttonPin.setImage(UIImage(systemName: note.pinnedNote ? "pin.fill": "pin"), for: .normal)
         cell.buttonDelete.addTarget(self, action: #selector(deleteNote), for: .touchUpInside)
-        cell.labelTitle.text = note.titleNote
-        cell.view.backgroundColor = UIColor().color(note.colorNote)
-        cell.labelHashtag.text = note.tagNote
-        cell.labelDescription.text = note.descriptionNote
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM.dd HH:mm"
-        let dateString = dateFormatter.string(from: note.editedData!)
-        
-        cell.labelLastEdited.text = dateString
+        cell.configureData(note: note)
         return cell
     }
     
@@ -135,10 +114,6 @@ extension NotesViewController: UICollectionViewDelegate, UICollectionViewDataSou
         let editNoteVC = EditNoteViewController()
         editNoteVC.noteData = sortedData()[indexPath.item]
         navigationController?.pushViewController(editNoteVC, animated: true)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 156, height: 252)
     }
 }
 
