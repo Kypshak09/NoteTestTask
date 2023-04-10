@@ -33,6 +33,7 @@ class EditNoteView: UIViewController {
     
     let noteDescriptionText: UITextView = {
         let text = UITextView()
+        text.font = UIFont.systemFont(ofSize: 16)
         text.layer.cornerRadius = 10
         text.backgroundColor = .mySearchColor()
         return text
